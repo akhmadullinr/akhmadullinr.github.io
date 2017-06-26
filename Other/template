@@ -933,8 +933,11 @@
                                 </div>
                             </div>
                             <div class="sidebar">
-                                <div class="sidebar_header rel_block" onclick="relView()">
-                                    <span>Связанные таблицы</span></div>
+                                <div class="sidebar_header rel_block" id="fgroup_view99" onclick="relView()">
+                                    <img id="fg_img_view1"
+                                         src="images/block.gif">
+                                    <span>Связанные таблицы</span>
+                                </div>
                                 <ul id="rel_tables_list" style="display: block">
                                     <li>
                                         <a href="fields.php?table=271&rel_search&rel_table=42&rel_line=2&rel_field=4629"><span>Лог рассылок </span></a>
@@ -1034,6 +1037,16 @@
         })();
 
     </script>
+
+    <script>
+
+        (function () {
+            if (!document.getElementById("fgroup_view99").innerHTML.replace(/^\s+/g, '')) document.getElementById("fgroup_view_header1").style.display = 'none';
+        })();
+
+    </script>
+
+
     <script>
         function show_fgroup(fgroup_id)
         {
@@ -1077,6 +1090,26 @@
             }
         }
 
+
+    </script>
+    <script>
+        // Список связанных таблиц
+        function relView() {
+            if (document.getElementById("rel_tables_list").style.display == 'none')
+            {
+                $('rel_list_view42', 1, { expires: 30});
+                if (navigator.appVersion.indexOf("MSIE")!=-1) document.getElementById("rel_tables_list").style.display = 'block'; // В IE без анимации.
+            }
+            else
+            {
+                $('rel_list_view42', null);
+                if (navigator.appVersion.indexOf("MSIE")!=-1) document.getElementById("rel_tables_list").style.display = 'none'; // В IE без анимации.
+            }
+
+            if (navigator.appVersion.indexOf("MSIE")==-1) $("#rel_tables_list").slideToggle(); // Для нормальных браузеров.
+
+            $(".sidebar_header").toggleClass("rel_block rel_none");
+        }
 
     </script>
 </body>
