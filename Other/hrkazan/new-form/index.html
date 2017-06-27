@@ -1,0 +1,2474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link
+            href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+            rel="stylesheet"  type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous">
+
+    </script>
+</head>
+<body>
+    <div class="form-wrapper">
+        <div class="container">
+            <div class="row">
+                <form action="#" method="#">
+                    <div class="main-row">
+                        <div class="form-title">
+                            <span>sdfgds </span>
+                            <a>
+                                <img class="settings-t" src="images/settings_b.gif">
+                            </a>
+                        </div>
+                        <div class="form-pagination">
+                            <a class="form-pagination__link-left" href="#"><<</a>
+                            <a href="#">< Пред.</a>
+                            <span>1 из 3</span>
+                            <a href="#">След. ></a>
+                            <a class="form-pagination__link-right" href="#">>></a>
+                        </div>
+                    </div>
+                    <div class="form-body">
+                        <div class="body-table-wrapper" id="view_block">
+                            <table width="550" cellpadding="4" cellspacing="0" border="0">
+                                <tbody>
+                                    <tr id="fgroup_view_header1">
+                                        <td colspan="2" onclick="show_fgroup('1')" class="note_group">
+                                            <img id="fg_img_view1"
+                                                 src="images/block.gif">
+                                            <span>Основная информация</span>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                                <tbody id="fgroup_view1">
+                                    <tr id="field_view3711">
+                                    <td style="padding: 6px 4px; width:40%; vertical-align: baseline;">
+                                        <table align=right>
+                                            <tr>
+                                                <td align=right style="line-height: 14px;">
+                                                    <b class="fgroup_view-name">Вид</b>
+                                                </td>
+                                                <td><img src="images/help.gif"
+                                                         onclick="viewHelp(3711)"
+                                                         onmouseover="v_init = setTimeout('viewHelp(3711)', 500)"
+                                                         onmouseout="hideHelpInit(3711)">
+                                                    <div class="field_tooltip" id="f_tooltip3711"
+                                                         onmouseover="viewHelp(3711)"
+                                                         onmouseout="hideHelpInit(3711)"></div>
+                                                </td>                                                        <td><b>:</b></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align=left class="field"
+                                        style="padding: 6px 4px; max-width: 330px;word-wrap: break-word;"><span
+                                            id="view_cell_3711"
+                                            style="white-space: pre-wrap;">Юр.лицо</span>
+                                    </td>
+                                </tr>
+                                    <tr id="field_view435">
+                                        <td style="padding: 6px 4px; width:40%; vertical-align: baseline;">
+                                            <table align=right>
+                                                <tr>
+                                                    <td align=right style="line-height: 14px;">
+                                                        <b>Название</b>
+                                                    </td>
+                                                    <td><b>:</b></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td align=left class="input-field"
+                                            style="padding: 6px 4px; max-width: 330px;word-wrap: break-word;"><span
+                                                id="view_cell_435"
+                                                style="white-space: pre-wrap;">sdfgds</span></td>
+                                    </tr>
+                                    <tr id="field_view1047">
+                                        <td style="padding: 6px 4px; width:40%; vertical-align: baseline;">
+                                            <table align=right>
+                                                <tr>
+                                                    <td align=right style="line-height: 14px;">
+                                                        <b>Адрес</b>
+                                                    </td>
+                                                    <td><b>:</b></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td align=left class="input-field"
+                                            style="padding: 6px 4px; max-width: 330px;word-wrap: break-word;"><span
+                                                id="view_cell_1047"
+                                                style="white-space: pre-wrap;">dfg</span></td>
+                                    </tr>
+                                    <tr id="field_view441">
+                                        <td style="padding: 6px 4px; width:40%; vertical-align: baseline;">
+                                            <table align=right>
+                                                <tr>
+                                                    <td align=right style="line-height: 14px;">
+                                                        <b>Телефон</b>
+                                                    </td>
+                                                    <td><b>:</b></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td align=left class="input-field"
+                                            style="padding: 6px 4px; max-width: 330px;word-wrap: break-word;"><span
+                                                id="view_cell_441"
+                                                style="white-space: pre-wrap;"></span></td>
+                                    </tr>
+                                    <td style="padding: 6px 4px; width:40%; vertical-align: baseline;">
+                                        <table align=right>
+                                            <tr>
+                                                <td align=right style="line-height: 14px;">
+                                                    <b>E-mail</b>
+                                                </td>
+                                                <td><b>:</b></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align=left class="input-field"
+                                        style="padding: 6px 4px; max-width: 330px;word-wrap: break-word;"><span
+                                            id="view_cell_442"
+                                            style="white-space: pre-wrap;"><a href="mailto:vitaliy@clientbase.ru">vitaliy@clientbase.ru</a></span></td>
+                                    </tr>
+                                    <tr id="field_view443">
+                                        <td style="padding: 6px 4px; width:40%; vertical-align: baseline;">
+                                            <table align=right>
+                                                <tr>
+                                                    <td align=right style="line-height: 14px;">
+                                                        <b class="fgroup_view-name" >Контактное лицо</b>
+                                                    </td>
+                                                    <td><img src="images/help.gif"
+                                                             onclick="viewHelp(443)"
+                                                             onmouseover="v_init = setTimeout('viewHelp(443)', 500)"
+                                                             onmouseout="hideHelpInit(443)">
+                                                        <div class="field_tooltip" id="f_tooltip443"
+                                                             onmouseover="viewHelp(443)"
+                                                             onmouseout="hideHelpInit(443)"></div>
+                                                    </td>                                                        <td><b>:</b></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td align=left class="field"
+                                            style="padding: 6px 4px; max-width: 330px;word-wrap: break-word;"><span
+                                                id="view_cell_443"
+                                                style="white-space: pre-wrap;"></span></td>
+                                    </tr>
+                                </tbody>
+                                <tr id="fgroup_view_header2">
+                                    <td colspan=2 class="note_group"
+                                        onclick="show_fgroup('2')">
+                                        <img src="images/block.gif"
+                                             id="fg_img_view2"
+                                             style="vertical-align: baseline;">
+                                        <b>Дополнительно</b>
+                                    </td>
+                                </tr>
+                                <script>
+                                    $(function () {
+                                        if (!document.getElementById("fgroup_view2").innerHTML.replace(/^\s+/g, '')) document.getElementById("fgroup_view_header2").style.display = 'none';
+                                    });
+                                </script>
+                                <tbody id="fgroup_view2"
+                                >
+                                <tr id="field_view438">
+                                    <td style="padding: 6px 4px; width:40%; vertical-align: baseline;">
+                                        <table align=right>
+                                            <tr>
+                                                <td align=right style="line-height: 14px;">
+                                                    <b class="fgroup_view-name">Менеджер</b>
+                                                </td>
+                                                <td><img src="images/help.gif"
+                                                         onclick="viewHelp(438)"
+                                                         onmouseover="v_init = setTimeout('viewHelp(438)', 500)"
+                                                         onmouseout="hideHelpInit(438)">
+                                                    <div class="field_tooltip" id="f_tooltip438"
+                                                         onmouseover="viewHelp(438)"
+                                                         onmouseout="hideHelpInit(438)"></div>
+                                                </td>                                                        <td><b>:</b></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align=left class="field"
+                                        style="padding: 6px 4px; max-width: 330px;word-wrap: break-word;"><span
+                                            id="view_cell_438"
+                                            style="white-space: pre-wrap;">Терехов Виталий</span></td>
+                                </tr>
+                                <tr id="field_view772">
+                                    <td style="padding: 6px 4px; width:40%; vertical-align: baseline;">
+                                        <table align=right>
+                                            <tr>
+                                                <td align=right style="line-height: 14px;">
+                                                    <b class="fgroup_view-name">Тип</b>
+                                                </td>
+                                                <td><img src="images/help.gif"
+                                                         onclick="viewHelp(772)"
+                                                         onmouseover="v_init = setTimeout('viewHelp(772)', 500)"
+                                                         onmouseout="hideHelpInit(772)">
+                                                    <div class="field_tooltip" id="f_tooltip772"
+                                                         onmouseover="viewHelp(772)"
+                                                         onmouseout="hideHelpInit(772)"></div>
+                                                </td>                                                        <td><b>:</b></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align=left class="field"
+                                        style="padding: 6px 4px; max-width: 330px;word-wrap: break-word;"><span
+                                            id="view_cell_772"
+                                            style="white-space: pre-wrap;">Потенциальный</span></td>
+                                </tr>
+                                <tr id="field_view552">
+                                    <td style="padding: 6px 4px; width:40%; vertical-align: baseline;">
+                                        <table align=right>
+                                            <tr>
+                                                <td align=right style="line-height: 14px;">
+                                                    <b class="fgroup_view-name">Статус</b>
+                                                </td>
+                                                <td><img src="images/help.gif"
+                                                         onclick="viewHelp(552)"
+                                                         onmouseover="v_init = setTimeout('viewHelp(552)', 500)"
+                                                         onmouseout="hideHelpInit(552)">
+                                                    <div class="field_tooltip" id="f_tooltip552"
+                                                         onmouseover="viewHelp(552)"
+                                                         onmouseout="hideHelpInit(552)"></div>
+                                                </td>                                                        <td><b>:</b></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align=left
+                                        style="padding: 6px 4px; max-width: 330px;word-wrap: break-word;"><span
+                                            id="view_cell_552"
+                                            style="white-space: pre-wrap;">Выставлен счет</span></td>
+                                </tr>
+                                <tr id="field_view444">
+                                    <td style="padding: 6px 4px; width:40%; vertical-align: baseline;">
+                                        <table align=right>
+                                            <tr>
+                                                <td align=right style="line-height: 14px;">
+                                                    <b>Сайт</b>
+                                                </td>
+                                                <td><b>:</b></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align=left class="input-field"
+                                        style="padding: 6px 4px; max-width: 330px;word-wrap: break-word;"><span
+                                            id="view_cell_444"
+                                            style="white-space: pre-wrap;"></span></td>
+                                </tr>
+                                <tr id="field_view770">
+                                    <td style="padding: 6px 4px; width:40%; vertical-align: baseline;">
+                                        <table align=right>
+                                            <tr>
+                                                <td align=right style="line-height: 14px;">
+                                                    <b class="fgroup_view-name">Деятельность</b>
+                                                </td>
+                                                <td><img src="images/help.gif"
+                                                         onclick="viewHelp(770)"
+                                                         onmouseover="v_init = setTimeout('viewHelp(770)', 500)"
+                                                         onmouseout="hideHelpInit(770)">
+                                                    <div class="field_tooltip" id="f_tooltip770"
+                                                         onmouseover="viewHelp(770)"
+                                                         onmouseout="hideHelpInit(770)"></div>
+                                                </td>                                                        <td><b>:</b></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align=left class="input-field"
+                                        style="padding: 6px 4px; max-width: 330px;word-wrap: break-word;"><span
+                                            id="view_cell_770"
+                                            style="white-space: pre-wrap;"></span></td>
+                                </tr>
+                                <tr id="field_view445">
+                                    <td style="padding: 6px 4px; width:40%; vertical-align: baseline;">
+                                        <table align=right>
+                                            <tr>
+                                                <td align=right style="line-height: 14px;">
+                                                    <b class="fgroup_view-name">Примечание</b>
+                                                </td>
+                                                <td><img src="images/help.gif"
+                                                         onclick="viewHelp(445)"
+                                                         onmouseover="v_init = setTimeout('viewHelp(445)', 500)"
+                                                         onmouseout="hideHelpInit(445)">
+                                                    <div class="field_tooltip" id="f_tooltip445"
+                                                         onmouseover="viewHelp(445)"
+                                                         onmouseout="hideHelpInit(445)"></div>
+                                                </td>                                                        <td><b>:</b></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align=left
+                                        style="padding: 6px 4px; max-width: 330px;word-wrap: break-word;"><span
+                                            id="view_cell_445"
+                                            style="white-space: pre-wrap;"></span></td>
+                                </tr>
+                                <tr id="field_view446">
+                                    <td style="padding: 6px 4px; width:40%; vertical-align: baseline;">
+                                        <table align=right>
+                                            <tr>
+                                                <td align=right style="line-height: 14px;">
+                                                    <b class="fgroup_view-name">Лог рассылки</b>
+                                                </td>
+                                                <td><img src="images/help.gif"
+                                                         onclick="viewHelp(446)"
+                                                         onmouseover="v_init = setTimeout('viewHelp(446)', 500)"
+                                                         onmouseout="hideHelpInit(446)">
+                                                    <div class="field_tooltip" id="f_tooltip446"
+                                                         onmouseover="viewHelp(446)"
+                                                         onmouseout="hideHelpInit(446)"></div>
+                                                </td>                                                        <td><b>:</b></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align=left
+                                        style="padding: 6px 4px; max-width: 330px;word-wrap: break-word;"><span
+                                            id="view_cell_446"
+                                            style="white-space: pre-wrap;">Коммерческое предложение (образец) - SKIP - UNSUBSCRIBE, 14.06.2017 17:24:10</span></td>
+                                </tr>
+                                <tr id="field_view884">
+                                    <td style="padding: 6px 4px; width:40%; vertical-align: baseline;">
+                                        <table align=right>
+                                            <tr>
+                                                <td align=right style="line-height: 14px;">
+                                                    <b>История &quot;Онлайн Консультанта&quot;</b>
+                                                </td>
+                                                <td><b>:</b></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align=left
+                                        style="padding: 6px 4px; max-width: 330px;word-wrap: break-word;"><span
+                                            id="view_cell_884"
+                                            style=""></span></td>
+                                </tr>
+                                <tr id="field_view3700">
+                                    <td style="padding: 6px 4px; width:40%; vertical-align: baseline;">
+                                        <table align=right>
+                                            <tr>
+                                                <td align=right style="line-height: 14px;">
+                                                    <b class="fgroup_view-name">Дата следующего контакта</b>
+                                                </td>
+                                                <td><img src="images/help.gif"
+                                                         onclick="viewHelp(3700)"
+                                                         onmouseover="v_init = setTimeout('viewHelp(3700)', 500)"
+                                                         onmouseout="hideHelpInit(3700)">
+                                                    <div class="field_tooltip" id="f_tooltip3700"
+                                                         onmouseover="viewHelp(3700)"
+                                                         onmouseout="hideHelpInit(3700)"></div>
+                                                </td>                                                        <td><b>:</b></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align=left
+                                        style="padding: 6px 4px; max-width: 330px;word-wrap: break-word;"><span
+                                            id="view_cell_3700"
+                                            style="white-space: pre-wrap;"></span></td>
+                                </tr>
+                                </tbody>
+                                <tr id="fgroup_view_header30">
+                                    <td colspan=2 class="note_group"
+                                        onclick="show_fgroup('30')">
+                                        <img src="images/block.gif"
+                                             id="fg_img_view30"
+                                             style="vertical-align: baseline;">
+                                        <b>Клиентский доступ в систему</b>
+                                    </td>
+                                </tr>
+                                <script>
+                                    (function () {
+                                        if (!document.getElementById("fgroup_view30").innerHTML.replace(/^\s+/g, '')) document.getElementById("fgroup_view_header30").style.display = 'none';
+                                    })();
+                                </script>
+                                <tbody id="fgroup_view30"
+                                >
+                                <tr id="field_view1460">
+                                    <td style="padding: 6px 4px; width:40%; vertical-align: baseline;">
+                                        <table align=right>
+                                            <tr>
+                                                <td align=right style="line-height: 14px;">
+                                                    <b>Группа доступа</b>
+                                                </td>
+                                                <td><b>:</b></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align=left class="field"
+                                        style="padding: 6px 4px; max-width: 330px;word-wrap: break-word;"><span
+                                            id="view_cell_1460"
+                                            style="white-space: pre-wrap;"></span></td>
+                                </tr>
+                                <tr id="field_view1470">
+                                    <td style="padding: 6px 4px; width:40%; vertical-align: baseline;">
+                                        <table align=right>
+                                            <tr>
+                                                <td align=right style="line-height: 14px;">
+                                                    <b class="fgroup_view-name">Логин</b>
+                                                </td>
+                                                <td><img src="images/help.gif"
+                                                         onclick="viewHelp(1470)"
+                                                         onmouseover="v_init = setTimeout('viewHelp(1470)', 500)"
+                                                         onmouseout="hideHelpInit(1470)">
+                                                    <div class="field_tooltip" id="f_tooltip1470"
+                                                         onmouseover="viewHelp(1470)"
+                                                         onmouseout="hideHelpInit(1470)"></div>
+                                                </td>                                                        <td><b>:</b></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align=left class="input-field"
+                                        style="padding: 6px 4px; max-width: 330px;word-wrap: break-word;"><span
+                                            id="view_cell_1470"
+                                            style="white-space: pre-wrap;"></span></td>
+                                </tr>
+                                <tr id="field_view1480">
+                                    <td style="padding: 6px 4px; width:40%; vertical-align: baseline;">
+                                        <table align=right>
+                                            <tr>
+                                                <td align=right style="line-height: 14px;">
+                                                    <b>Пользователь</b>
+                                                </td>
+                                                <td><b>:</b></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align=left class="input-field"
+                                        style="padding: 6px 4px; max-width: 330px;word-wrap: break-word;"><span
+                                            id="view_cell_1480"
+                                            style="white-space: pre-wrap;"></span></td>
+                                </tr>
+                                </tbody>
+                                <tr id="fgroup_view_header11">
+                                    <td colspan=2 class="note_group"
+                                        onclick="show_fgroup('11')">
+                                        <img src="images/block.gif"
+                                             id="fg_img_view11"
+                                             style="vertical-align: baseline;">
+                                        <b>Реквизиты</b>
+                                    </td>
+                                </tr>
+                                <script>
+                                    (function () {
+                                        if (!document.getElementById("fgroup_view11").innerHTML.replace(/^\s+/g, '')) document.getElementById("fgroup_view_header11").style.display = 'none';
+                                    })();
+                                </script>
+                                <tbody id="fgroup_view11">
+                                <tr id="field_view439">
+                                    <td style="padding: 6px 4px; width:40%; vertical-align: baseline;">
+                                        <table align=right>
+                                            <tr>
+                                                <td align=right style="line-height: 14px;">
+                                                    <b class="fgroup_view-name">Юридическое название</b>
+                                                </td>
+                                                <td><img src="images/help.gif"
+                                                         onclick="viewHelp(439)"
+                                                         onmouseover="v_init = setTimeout('viewHelp(439)', 500)"
+                                                         onmouseout="hideHelpInit(439)">
+                                                    <div class="field_tooltip" id="f_tooltip439"
+                                                         onmouseover="viewHelp(439)"
+                                                         onmouseout="hideHelpInit(439)"></div>
+                                                </td>                                                        <td><b>:</b></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align=left
+                                        style="padding: 6px 4px; max-width: 330px;word-wrap: break-word;"><span
+                                            id="view_cell_439"
+                                            style="white-space: pre-wrap;">sdfgds</span></td>
+                                </tr>
+                                <tr id="field_view440">
+                                    <td style="padding: 6px 4px; width:40%; vertical-align: baseline;">
+                                        <table align=right>
+                                            <tr>
+                                                <td align=right style="line-height: 14px;">
+                                                    <b>Юридический адрес</b>
+                                                </td>
+                                                <td><b>:</b></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align=left class="input-field"
+                                        style="padding: 6px 4px; max-width: 330px;word-wrap: break-word;"><span
+                                            id="view_cell_440"
+                                            style="white-space: pre-wrap;">dfg</span></td>
+                                </tr>
+                                <tr id="field_view3340">
+                                    <td style="padding: 6px 4px; width:40%; vertical-align: baseline;">
+                                        <table align=right>
+                                            <tr>
+                                                <td align=right style="line-height: 14px;">
+                                                    <b>ОГРН</b>
+                                                </td>
+                                                <td><b>:</b></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align=left class="input-field"
+                                        style="padding: 6px 4px; max-width: 330px;word-wrap: break-word;"><span
+                                            id="view_cell_3340"
+                                            style="white-space: pre-wrap;"></span></td>
+                                </tr>
+                                <tr id="field_view1056">
+                                    <td style="padding: 6px 4px; width:40%; vertical-align: baseline;">
+                                        <table align=right>
+                                            <tr>
+                                                <td align=right style="line-height: 14px;">
+                                                    <b>ИНН</b>
+                                                </td>
+                                                <td><b>:</b></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align=left class="input-field"
+                                        style="padding: 6px 4px; max-width: 330px;word-wrap: break-word;"><span
+                                            id="view_cell_1056"
+                                            style="white-space: pre-wrap;"></span></td>
+                                </tr>
+                                <tr id="field_view1057">
+                                    <td style="padding: 6px 4px; width:40%; vertical-align: baseline;">
+                                        <table align=right>
+                                            <tr>
+                                                <td align=right style="line-height: 14px;">
+                                                    <b>КПП</b>
+                                                </td>
+                                                <td><b>:</b></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align=left class="input-field"
+                                        style="padding: 6px 4px; max-width: 330px;word-wrap: break-word;"><span
+                                            id="view_cell_1057"
+                                            style="white-space: pre-wrap;"></span></td>
+                                </tr>
+                                <tr id="field_view1065">
+                                    <td style="padding: 6px 4px; width:40%; vertical-align: baseline;">
+                                        <table align=right>
+                                            <tr>
+                                                <td align=right style="line-height: 14px;">
+                                                    <b>Банк</b>
+                                                </td>
+                                                <td><b>:</b></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align=left class="input-field"
+                                        style="padding: 6px 4px; max-width: 330px;word-wrap: break-word;"><span
+                                            id="view_cell_1065"
+                                            style="white-space: pre-wrap;"></span></td>
+                                </tr>
+                                <tr id="field_view1061">
+                                    <td style="padding: 6px 4px; width:40%; vertical-align: baseline;">
+                                        <table align=right>
+                                            <tr>
+                                                <td align=right style="line-height: 14px;">
+                                                    <b>БИК</b>
+                                                </td>
+                                                <td><b>:</b></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align=left class="input-field"
+                                        style="padding: 6px 4px; max-width: 330px;word-wrap: break-word;"><span
+                                            id="view_cell_1061"
+                                            style="white-space: pre-wrap;"></span></td>
+                                </tr>
+                                <tr id="field_view1058">
+                                    <td style="padding: 6px 4px; width:40%; vertical-align: baseline;">
+                                        <table align=right>
+                                            <tr>
+                                                <td align=right style="line-height: 14px;">
+                                                    <b>Расчетный счет</b>
+                                                </td>
+                                                <td><b>:</b></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align=left class="input-field"
+                                        style="padding: 6px 4px; max-width: 330px;word-wrap: break-word;"><span
+                                            id="view_cell_1058"
+                                            style="white-space: pre-wrap;"></span></td>
+                                </tr>
+                                <tr id="field_view1059">
+                                    <td style="padding: 6px 4px; width:40%; vertical-align: baseline;">
+                                        <table align=right>
+                                            <tr>
+                                                <td align=right style="line-height: 14px;">
+                                                    <b>Корр. счет</b>
+                                                </td>
+                                                <td><b>:</b></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align=left class="input-field"
+                                        style="padding: 6px 4px; max-width: 330px;word-wrap: break-word;"><span
+                                            id="view_cell_1059"
+                                            style="white-space: pre-wrap;"></span></td>
+                                </tr>
+                                <tr id="field_view1060">
+                                    <td style="padding: 6px 4px; width:40%; vertical-align: baseline;">
+                                        <table align=right>
+                                            <tr>
+                                                <td align=right style="line-height: 14px;">
+                                                    <b>Лицевой счет</b>
+                                                </td>
+                                                <td><b>:</b></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align=left class="input-field"
+                                        style="padding: 6px 4px; max-width: 330px;word-wrap: break-word;"><span
+                                            id="view_cell_1060"
+                                            style="white-space: pre-wrap;"></span></td>
+                                </tr>
+                                <tr id="field_view1062">
+                                    <td style="padding: 6px 4px; width:40%; vertical-align: baseline;">
+                                        <table align=right>
+                                            <tr>
+                                                <td align=right style="line-height: 14px;">
+                                                    <b>Руководитель</b>
+                                                </td>
+                                                <td><b>:</b></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align=left class="input-field"
+                                        style="padding: 6px 4px; max-width: 330px;word-wrap: break-word;"><span
+                                            id="view_cell_1062"
+                                            style="white-space: pre-wrap;"></span></td>
+                                </tr>
+                                <tr id="field_view1063">
+                                    <td style="padding: 6px 4px; width:40%; vertical-align: baseline;">
+                                        <table align=right>
+                                            <tr>
+                                                <td align=right style="line-height: 14px;">
+                                                    <b>Бухгалтер</b>
+                                                </td>
+                                                <td><b>:</b></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align=left class="input-field"
+                                        style="padding: 6px 4px; max-width: 330px;word-wrap: break-word;"><span
+                                            id="view_cell_1063"
+                                            style="white-space: pre-wrap;"></span></td>
+                                </tr>
+                                <tr id="field_view1064">
+                                    <td style="padding: 6px 4px; width:40%; vertical-align: baseline;">
+                                        <table align=right>
+                                            <tr>
+                                                <td align=right style="line-height: 14px;">
+                                                    <b>Код ОКАТО</b>
+                                                </td>
+                                                <td><b>:</b></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align=left class="input-field"
+                                        style="padding: 6px 4px; max-width: 330px;word-wrap: break-word;"><span
+                                            id="view_cell_1064"
+                                            style="white-space: pre-wrap;"></span></td>
+                                </tr>
+                                <tr id="field_view3810">
+                                    <td style="padding: 6px 4px; width:40%; vertical-align: baseline;">
+                                        <table align=right>
+                                            <tr>
+                                                <td align=right style="line-height: 14px;">
+                                                    <b>ОКПО</b>
+                                                </td>
+                                                <td><b>:</b></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align=left class="input-field"
+                                        style="padding: 6px 4px; max-width: 330px;word-wrap: break-word;"><span
+                                            id="view_cell_3810"
+                                            style="white-space: pre-wrap;"></span></td>
+                                </tr>
+                                <tr id="field_view1088">
+                                    <td style="padding: 6px 4px; width:40%; vertical-align: baseline;">
+                                        <table align=right>
+                                            <tr>
+                                                <td align=right style="line-height: 14px;">
+                                                    <b>Наша компания</b>
+                                                </td>
+                                                <td><b>:</b></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align=left class="field"
+                                        style="padding: 6px 4px; max-width: 330px;word-wrap: break-word;"><span
+                                            id="view_cell_1088"
+                                            style="white-space: pre-wrap;"></span></td>
+                                </tr>
+                            </table>
+                            <br><br>
+
+                            <script>
+                                function select_all(param) {
+                                    var first_elem = 1;
+                                    var status;
+                                    $("td #field_edit" + param + "_td1").children('input').each(function () {
+                                        if (this.type == 'checkbox') {
+                                            if (first_elem == 1) {
+                                                first_elem += 1;
+                                                if (this.checked)
+                                                    status = 1;
+                                                else
+                                                    status = 0;
+                                            }
+                                            else {
+                                                if (status == 1)
+                                                    this.checked = true;
+                                                else
+                                                    this.checked = false;
+
+                                                document.getElementById('value' + param).value++;
+                                                $('#value' + param).change();
+                                            }
+                                        }
+                                    });
+                                }
+                            </script>
+
+                        </div>
+
+                        <div id="edit_block" style="display:none">
+                            <table border=0 cellpadding=4 cellspacing=0 width=550>
+                                </tbody>
+                                <tr id="fgroup_edit_header1" data-fgrpid="1" style="padding: ">
+                                    <td colspan=2 class="edit-title"
+                                        style="background-color: #eee; border-top: 1px #ccc solid; padding-top: 1px; padding-left: 7px; cursor:default; border-radius: 7px"
+                                        onclick="show_fgroup('1')">
+                                        <img src="images/block.gif"
+                                             id="fg_img_edit1"
+                                             style="vertical-align: baseline;">
+                                        <b>Основная информация</b>
+                                    </td>
+                                </tr>
+                                <script>
+                                    $(function () {
+                                        if (!document.getElementById("fgroup_edit1").innerHTML.replace(/^\s+/g, '')) document.getElementById("fgroup_edit_header1").style.display = 'none';
+                                    });
+                                </script>
+                                <tbody id="fgroup_edit1"
+                                >
+                                <tr id="field_edit3711">
+                                    <td style=" width:40%; padding: 2px 4px; vertical-align: baseline;">
+                                        <table align=right>
+                                            <tr>
+                                                <td align=right style="line-height: 13px;"
+                                                    class="table_title_head"
+                                                    title="Автоматически заполняемое поле"  >
+                                                    <span title="Обязательное для заполнения" style="color: #f00">*</span>
+                                                    <b style="vertical-align: middle;">Вид </b>
+                                                </td>
+                                                <td><img src="images/help.gif" class="info-icon"
+                                                         onclick="viewHelp(3711)"
+                                                         onmouseover="v_init = setTimeout('viewHelp(3711)', 500)"
+                                                         onmouseout="hideHelpInit(3711)">
+                                                    <div class="field_tooltip" id="ef_tooltip3711"
+                                                         onmouseover="viewHelp(3711)"
+                                                         onmouseout="hideHelpInit(3711)"></div>
+                                                </td>                                                        <td><b>:</b></td>
+                                            </tr>
+                                        </table>
+                                        <input type=hidden id="main3711" value=1>
+                                        <input type='hidden' id="type_value3711"
+                                               value='4'>
+                                        <input type=hidden
+                                               name="edit[2][3711]"
+                                               id="edit3711" value=1>                                            </td>
+                                    <td style="padding: 2px 4px;">
+
+                                        <table cellpadding="0" cellspacing="0" border="0" style="width: 85%;">
+                                            <tr>
+                                                <td>                                                        </td>
+
+                                                <td id="field_edit3711_td1"
+                                                    style="">
+
+                                                    <div class="edit_block_select"><select class="form-control" name="value[2][3711]"                                                                            id="value3711"                                                                             style="max-width: 330px;"><option value='' disabled></option><option selected value='Юр.лицо'>Юр.лицо</option><option value='Физ.лицо'>Физ.лицо</option></select></div>
+                                                </td>
+
+                                                <td>                                                        </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <script type="text/javascript">
+                                    $(document).ready(function load_3711() {
+
+                                        if (document.getElementById("value3711") && document.getElementById("tab_1"))
+                                        {
+                                            if (document.getElementById("value3711").value=="Физ.лицо") {
+                                                $("#tab_1").css("display","none");
+                                            }
+                                            else {
+                                                $("#tab_1").css("display","");
+                                            }
+                                        }
+                                        $("select[field_id='773'] option[value='Получение оплаты'], select[field_id='773'] option[value='Выставление счета']").hide();
+                                        function hideSomeParams() {
+                                            $("select[field_id='2960'] option[value!='Выставлен счет'][value!='Отказ']").hide();
+                                        }
+                                        if ($('#view_cell_552').html()=="Выставлен счет")
+                                            hideSomeParams();
+                                        $("select[field_id='2960']").on("change", function(){
+                                            if ($(this).val()=='Выставлен счет')
+                                                hideSomeParams();
+                                        })
+                                    })
+
+                                    $(function(){
+
+                                    })
+
+                                    function onchange_3711()
+                                    { // Функция по событию "изменение поля"
+                                      // при смене вида лица введенные данные сохраняются и открываются на редактирование вновь
+                                        document.getElementById('edit_mode').value=1;
+                                        save_line();
+                                    }
+
+                                    addHandler(document.getElementById("value3711"), "onchange", onchange_3711);                        </script>
+                                <tr id="field_edit435">
+                                    <td style=" width:40%; padding: 2px 4px; vertical-align: baseline;">
+                                        <table align=right>
+                                            <tr>
+                                                <td align=right style="line-height: 13px;"
+                                                >                                                            <span title="Обязательное для заполнения" style="color: #f00">*</span>
+                                                    <b style="vertical-align: middle;">Название </b>
+                                                </td>
+                                                <td><b>:</b></td>
+                                            </tr>
+                                        </table>
+                                        <input type=hidden id="main435" value=1>
+                                        <input type='hidden' id="type_value435"
+                                               value='3'>
+                                        <input type=hidden
+                                               name="edit[2][435]"
+                                               id="edit435" value=1>                                            </td>
+                                    <td style="padding: 2px 4px;">
+
+                                        <table cellpadding="0" cellspacing="0" border="0" style="width: 85%;">
+                                            <tr>
+                                                <td>                                                        </td>
+
+                                                <td id="field_edit435_td1"
+                                                    style="">
+
+                                                    <input type="text"
+                                                           name="value[2][435]"                                                                           id="value435"
+                                                           value="sdfgds"
+                                                           class="form-control single_input"
+                                                    >
+                                                </td>
+
+                                                <td>                                                        </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr id="field_edit1047">
+                                    <td style=" width:40%; padding: 2px 4px; vertical-align: baseline;">
+                                        <table align=right>
+                                            <tr>
+                                                <td align=right style="line-height: 13px;"
+                                                >                                                            <b style="vertical-align: middle;">Адрес </b>
+                                                </td>
+                                                <td><b>:</b></td>
+                                            </tr>
+                                        </table>
+                                        <input type=hidden id="main1047" value=0>
+                                        <input type='hidden' id="type_value1047"
+                                               value='3'>
+                                        <input type=hidden
+                                               name="edit[2][1047]"
+                                               id="edit1047" value=1>                                            </td>
+                                    <td style="padding: 2px 4px;">
+
+                                        <table cellpadding="0" cellspacing="0" border="0" style="width: 85%;">
+                                            <tr>
+                                                <td>                                                        </td>
+
+                                                <td id="field_edit1047_td1"
+                                                    style="">
+
+                                                    <input type="text"
+                                                           name="value[2][1047]"                                                                           id="value1047"
+                                                           value="dfg"
+                                                           class="form-control single_input"
+                                                    >
+                                                </td>
+
+                                                <td>                                                        </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr id="field_edit441">
+                                    <td style=" width:40%; padding: 2px 4px; vertical-align: baseline;">
+                                        <table align=right>
+                                            <tr>
+                                                <td align=right style="line-height: 13px;"
+                                                >                                                            <b style="vertical-align: middle;">Телефон </b>
+                                                </td>
+                                                <td><b>:</b></td>
+                                            </tr>
+                                        </table>
+                                        <input type=hidden id="main441" value=0>
+                                        <input type='hidden' id="type_value441"
+                                               value='3'>
+                                        <input type=hidden
+                                               name="edit[2][441]"
+                                               id="edit441" value=1>                                            </td>
+                                    <td style="padding: 2px 4px;">
+
+                                        <table cellpadding="0" cellspacing="0" border="0" style="width: 85%;">
+                                            <tr>
+                                                <td>                                                        </td>
+
+                                                <td id="field_edit441_td1"
+                                                    style="">
+
+                                                    <input type="text"
+                                                           name="value[2][441]"                                                                           id="value441"
+                                                           value=""
+                                                           class="form-control single_input"
+                                                    >
+                                                </td>
+
+                                                <td>                                                        </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr id="field_edit442">
+                                    <td style=" width:40%; padding: 2px 4px; vertical-align: baseline;">
+                                        <table align=right>
+                                            <tr>
+                                                <td align=right style="line-height: 13px;"
+                                                >                                                            <b style="vertical-align: middle;">E-mail </b>
+                                                </td>
+                                                <td><b>:</b></td>
+                                            </tr>
+                                        </table>
+                                        <input type=hidden id="main442" value=0>
+                                        <input type='hidden' id="type_value442"
+                                               value='3'>
+                                        <input type=hidden
+                                               name="edit[2][442]"
+                                               id="edit442" value=1>                                            </td>
+                                    <td style="padding: 2px 4px;">
+
+                                        <table cellpadding="0" cellspacing="0" border="0" style="width: 85%;">
+                                            <tr>
+                                                <td>                                                        </td>
+
+                                                <td id="field_edit442_td1"
+                                                    style="">
+
+                                                    <input type="text"
+                                                           name="value[2][442]"                                                                           id="value442"
+                                                           value="vitaliy@clientbase.ru"
+                                                           class="form-control single_input"
+                                                    >
+                                                </td>
+
+                                                <td>                                                        </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr id="field_edit443" class="add_link_wrapper">
+                                    <td style=" width:40%; padding: 2px 4px; vertical-align: baseline;">
+                                        <table align=right>
+                                            <tr>
+                                                <td align=right style="line-height: 13px;">
+
+                                                    <b style="vertical-align: middle;">Контактное лицо </b>
+                                                </td>
+                                                <td><img src="images/help.gif"
+                                                         class="info-icon"
+                                                         onclick="viewHelp(443)"
+                                                         onmouseover="v_init = setTimeout('viewHelp(443)', 500)"
+                                                         onmouseout="hideHelpInit(443)">
+                                                    <div class="field_tooltip" id="ef_tooltip443"
+                                                         onmouseover="viewHelp(443)"
+                                                         onmouseout="hideHelpInit(443)"></div>
+                                                </td>                                                        <td><b>:</b></td>
+                                            </tr>
+                                        </table>
+                                        <input type=hidden id="main443" value=0>
+                                        <input type='hidden' id="type_value443"
+                                               value='5'>
+                                        <input type=hidden
+                                               name="edit[2][443]"
+                                               id="edit443" value=1>                                            </td>
+                                    <td style="padding: 2px 4px;" class="add_link-wrapper">
+
+                                        <table cellpadding="0" cellspacing="0" border="0" style="width: 85%;">
+                                            <tr>
+                                                <td>                                                        </td>
+
+                                                <td id="field_edit443_td1"
+                                                    style="white-space: nowrap;">
+                                                    <input class="form-control" type="text" id="edit_value443"
+                                                           value=""
+                                                           first_value=""
+                                                           class="input_edit_line"
+                                                    ><span
+                                                        class="drop_down_icon glyphicon glyphicon-triangle-bottom"
+                                                        onclick="this.blur();this.previousSibling.focus();$(this.previousSibling).show_search();return false;"
+                                                        onmousedown="$(this.previousSibling).prevent_blur();return false;"
+                                                        onmouseup="$(this.previousSibling).enable_blur();"
+                                                        ondragstart="event.returnValue=!1;"
+                                                ></span>
+                                                    <input
+                                                            type="hidden"
+                                                            name="value[2][443]"
+                                                            id="value443"
+                                                            value="0"
+                                                            onChange="">
+                                                    <img src="images/green_plus.png"
+                                                         title="Добавить сотрудника"
+                                                         class="add_link_img"
+                                                         onclick="add_link_block_show(443)"
+                                                         onmouseover="this.src='images/green_plus_active.png'"
+                                                         onmouseout="this.src='images/green_plus.png'">
+                                                </td>
+
+                                                <td>                                                        </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr id='add_link_block443' class='add_link_block443'
+                                    style='display:none;'>
+                                    <td colspan=2 class="add_link_block_top"></td>
+                                </tr>
+
+                                <tr class='add_link_block443' style='display:none;'>
+                                    <td align="right"
+                                    >
+                                        <b>ФИО</b>
+                                        <b>:</b>
+                                    </td>
+                                    <td style="vertical-align: middle;"
+                                        id="sub_cell_546_443_0"
+                                    ><input
+                                            part=add_link_field
+                                            value=""
+                                            id="fast_edit_span_546_443_0" field_id="546" line_id="443"
+                                            mult_value="0" placeholder="" subtable_id="0"
+                                            class="fast_edit_span_546_443 fast_edit_bordered  superpuper"/></div><script>addHandler_text(document.getElementById('fast_edit_span_546_443_0'));
+                    </script>
+                        </td>
+                        </tr>
+                        <tr class='add_link_block443' style='display:none;'>
+                            <td align="right"
+                            >
+                                <b>Должность</b>
+                                <b>:</b>
+                            </td>
+                            <td style="vertical-align: middle;"
+                                id="sub_cell_547_443_0"
+                            ><input
+                                    part=add_link_field
+                                    value=""
+                                    id="fast_edit_span_547_443_0" field_id="547" line_id="443"
+                                    mult_value="0" placeholder="" subtable_id="0"
+                                    class="fast_edit_span_547_443 fast_edit_bordered  superpuper"/></div><script>addHandler_text(document.getElementById('fast_edit_span_547_443_0'));
+                </script>
+                    </td>
+                    </tr>
+                    <tr class='add_link_block443' style='display:none;'>
+                        <td class="add_link_block_bottom"></td>
+                        <td class="add_link_block_bottom"><span
+                                onclick="add_link_block_save(443,'546,547,')"
+                                class="add_link_block_save"><span class="b_small_begin"></span><span
+                                class="b_small">Сохранить</span><span class="b_small_end"></span></span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <tr id="fgroup_edit_header2" data-fgrpid="2" style="padding: ">
+                        <td colspan=2 class="edit-title"
+                            style="background-color: #eee; border-top: 1px #ccc solid; padding-top: 1px; padding-left: 7px; cursor:default; border-radius: 7px"
+                            onclick="show_fgroup('2')">
+                            <img src="images/block.gif"
+                                 id="fg_img_edit2"
+                                 style="vertical-align: baseline;">
+                            <b>Дополнительно</b>
+                        </td>
+                    </tr>
+                    <script>
+                        $(function () {
+                            if (!document.getElementById("fgroup_edit2").innerHTML.replace(/^\s+/g, '')) document.getElementById("fgroup_edit_header2").style.display = 'none';
+                        });
+                    </script>
+                    <tbody id="fgroup_edit2"
+                    >
+                    <tr id="field_edit438">
+                        <td style=" width:40%; padding: 2px 4px; vertical-align: baseline;">
+                            <table align=right>
+                                <tr>
+                                    <td align=right style="line-height: 13px;"
+                                    >                                                            <b style="vertical-align: middle;">Менеджер </b>
+                                    </td>
+                                    <td><img src="images/help.gif"
+                                             onclick="viewHelp(438)"
+                                             class="info-icon"
+                                             onmouseover="v_init = setTimeout('viewHelp(438)', 500)"
+                                             onmouseout="hideHelpInit(438)">
+                                        <div class="field_tooltip" id="ef_tooltip438"
+                                             onmouseover="viewHelp(438)"
+                                             onmouseout="hideHelpInit(438)"></div>
+                                    </td>                                                        <td><b>:</b></td>
+                                </tr>
+                            </table>
+                            <input type=hidden id="main438" value=0>
+                            <input type='hidden' id="type_value438"
+                                   value='7'>
+                            <input type=hidden
+                                   name="edit[2][438]"
+                                   id="edit438" value=1>                                            </td>
+                        <td style="padding: 2px 4px;">
+
+                            <table cellpadding="0" cellspacing="0" border="0" style="width: 85%;">
+                                <tr>
+                                    <td>                                                        </td>
+
+                                    <td id="field_edit438_td1"
+                                        style="">
+
+                                        <div class="edit_block_select"><select class="form-control" name="value[2][438]"                                                                            id="value438"                                                                             style="max-width: 330px;"><option value='0'></option><option value='20'>admin3</option><option value='10'>alba</option><option value='50'>ksu</option><option value='30'>princes</option><option value='1' selected>Терехов Виталий</option></select></div>
+                                    </td>
+
+                                    <td>                                                        </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr id="field_edit772">
+                        <td style=" width:40%; padding: 2px 4px; vertical-align: baseline;">
+                            <table align=right>
+                                <tr>
+                                    <td align=right style="line-height: 13px;"
+                                        class="table_title_head"
+                                        title="Автоматически заполняемое поле"  >
+                                        <span title="Обязательное для заполнения" style="color: #f00">*</span>
+                                        <b style="vertical-align: middle;">Тип </b>
+                                    </td>
+                                    <td><img src="images/help.gif"
+                                             onclick="viewHelp(772)"
+                                             class="info-icon"
+                                             onmouseover="v_init = setTimeout('viewHelp(772)', 500)"
+                                             onmouseout="hideHelpInit(772)">
+                                        <div class="field_tooltip" id="ef_tooltip772"
+                                             onmouseover="viewHelp(772)"
+                                             onmouseout="hideHelpInit(772)"></div>
+                                    </td>                                                        <td><b>:</b></td>
+                                </tr>
+                            </table>
+                            <input type=hidden id="main772" value=1>
+                            <input type='hidden' id="type_value772"
+                                   value='4'>
+                            <input type=hidden
+                                   name="edit[2][772]"
+                                   id="edit772" value=1>                                            </td>
+                        <td style="padding: 2px 4px;">
+
+                            <table cellpadding="0" cellspacing="0" border="0" style="width: 85%;">
+                                <tr>
+                                    <td>                                                        </td>
+
+                                    <td id="field_edit772_td1"
+                                        style="">
+
+                                        <div class="edit_block_select"><select class="form-control" name="value[2][772]"                                                                            id="value772"                                                                             style="max-width: 330px;"><option value='' disabled></option><option selected value='Потенциальный'>Потенциальный</option><option value='Клиент'>Клиент</option><option value='Партнер'>Партнер</option></select></div>
+                                    </td>
+
+                                    <td>                                                        </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr id="field_edit444">
+                        <td style=" width:40%; padding: 2px 4px; vertical-align: baseline;">
+                            <table align=right>
+                                <tr>
+                                    <td align=right style="line-height: 13px;"
+                                    >                                                            <b style="vertical-align: middle;">Сайт </b>
+                                    </td>
+                                    <td><b>:</b></td>
+                                </tr>
+                            </table>
+                            <input type=hidden id="main444" value=0>
+                            <input type='hidden' id="type_value444"
+                                   value='3'>
+                            <input type=hidden
+                                   name="edit[2][444]"
+                                   id="edit444" value=1>                                            </td>
+                        <td style="padding: 2px 4px;">
+
+                            <table cellpadding="0" cellspacing="0" border="0" style="width: 85%;">
+                                <tr>
+                                    <td>                                                        </td>
+
+                                    <td id="field_edit444_td1"
+                                        style="">
+
+                                        <input type="text"
+                                               name="value[2][444]"                                                                           id="value444"
+                                               value=""
+                                               class="form-control single_input"
+                                        >
+                                    </td>
+
+                                    <td>                                                        </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr id="field_edit770">
+                        <td style=" width:40%; padding: 2px 4px; vertical-align: baseline;">
+                            <table align=right>
+                                <tr>
+                                    <td align=right style="line-height: 13px;"
+                                    >
+                                        <b style="vertical-align: middle;">Деятельность </b>
+                                    </td>
+                                    <td><img src="images/help.gif"
+                                             onclick="viewHelp(770)"
+                                             class="info-icon"
+                                             onmouseover="v_init = setTimeout('viewHelp(770)', 500)"
+                                             onmouseout="hideHelpInit(770)">
+                                        <div class="field_tooltip" id="ef_tooltip770"
+                                             onmouseover="viewHelp(770)"
+                                             onmouseout="hideHelpInit(770)"></div>
+                                    </td>                                                        <td><b>:</b></td>
+                                </tr>
+                            </table>
+                            <input type=hidden id="main770" value=0>
+                            <input type='hidden' id="type_value770"
+                                   value='3'>
+                            <input type=hidden
+                                   name="edit[2][770]"
+                                   id="edit770" value=1>                                            </td>
+                        <td style="padding: 2px 4px;">
+
+                            <table cellpadding="0" cellspacing="0" border="0" style="width: 85%;">
+                                <tr>
+                                    <td>                                                        </td>
+
+                                    <td id="field_edit770_td1"
+                                        style="">
+
+                                        <input type="text"
+                                               name="value[2][770]"                                                                           id="value770"
+                                               value=""
+                                               class="form-control single_input"
+                                        >
+                                    </td>
+
+                                    <td>                                                        </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr id="field_edit445">
+                        <td style=" width:40%; padding: 2px 4px; vertical-align: baseline;">
+                            <table align=right>
+                                <tr>
+                                    <td align=right style="line-height: 13px;"
+                                    >
+                                        <b style="vertical-align: middle;">Примечание </b>
+                                    </td>
+                                    <td><img src="images/help.gif"
+                                             onclick="viewHelp(445)"
+                                             class="info-icon"
+                                             onmouseover="v_init = setTimeout('viewHelp(445)', 500)"
+                                             onmouseout="hideHelpInit(445)">
+                                        <div class="field_tooltip" id="ef_tooltip445"
+                                             onmouseover="viewHelp(445)"
+                                             onmouseout="hideHelpInit(445)"></div>
+                                    </td>                                                        <td><b>:</b></td>
+                                </tr>
+                            </table>
+                            <input type=hidden id="main445" value=0>
+                            <input type='hidden' id="type_value445"
+                                   value='3'>
+                            <input type=hidden
+                                   name="edit[2][445]"
+                                   id="edit445" value=1>                                            </td>
+                        <td style="padding: 2px 4px;">
+
+                            <table cellpadding="0" cellspacing="0" border="0" style="width: 85%;">
+                                <tr>
+                                    <td>                                                        </td>
+
+                                    <td id="field_edit445_td1"
+                                        style="">
+
+                                                                <textarea class="form-control"
+                                                                          name="value[2][445]"                                                                         id="value445" rows="10"
+                                                                          cols="32"                                                                         style="max-width:328px;min-height:150px;" ></textarea>
+                                    </td>
+
+                                    <td>                                                        </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <tr id="fgroup_edit_header30" data-fgrpid="30" style="padding: ">
+                        <td colspan=2 class="edit-title"
+                            style="background-color: #eee; border-top: 1px #ccc solid; padding-top: 1px; padding-left: 7px; cursor:default; border-radius: 7px"
+                            onclick="show_fgroup('30')">
+                            <img src="images/block.gif"
+                                 id="fg_img_edit30"
+                                 style="vertical-align: baseline;">
+                            <b>Клиентский доступ в систему</b>
+                        </td>
+                    </tr>
+                    <script>
+                        $(function () {
+                            if (!document.getElementById("fgroup_edit30").innerHTML.replace(/^\s+/g, '')) document.getElementById("fgroup_edit_header30").style.display = 'none';
+                        });
+                    </script>
+                    <tbody id="fgroup_edit30"
+                    >
+                    <tr id="field_edit1460">
+                        <td style=" width:40%; padding: 2px 4px; vertical-align: baseline;">
+                            <table align=right>
+                                <tr>
+                                    <td align=right style="line-height: 13px;"
+                                        class="table_title_head"
+                                        title="Автоматически заполняемое поле"  >                                                            <b style="vertical-align: middle;">Группа доступа </b>
+                                    </td>
+                                    <td><b>:</b></td>
+                                </tr>
+                            </table>
+                            <input type=hidden id="main1460" value=0>
+                            <input type='hidden' id="type_value1460"
+                                   value='14'>
+                            <input type=hidden
+                                   name="edit[2][1460]"
+                                   id="edit1460" value=1>                                            </td>
+                        <td style="padding: 2px 4px;">
+
+                            <table cellpadding="0" cellspacing="0" border="0" style="width: 85%;">
+                                <tr>
+                                    <td>                                                        </td>
+
+                                    <td id="field_edit1460_td1"
+                                        style="">
+
+                                        <div class="edit_block_select"><select class="form-control" name="value[2][1460]"                                                                            id="value1460"                                                                             style="max-width: 330px;"><option value=0></option><option value='777'>Клиенты</option></select></div>
+                                    </td>
+
+                                    <td>                                                        </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr id="field_edit1470">
+                        <td style=" width:40%; padding: 2px 4px; vertical-align: baseline;">
+                            <table align=right>
+                                <tr>
+                                    <td align=right style="line-height: 13px;"
+                                    >                                                            <b style="vertical-align: middle;">Логин </b>
+                                    </td>
+                                    <td><img src="images/help.gif"
+                                             onclick="viewHelp(1470)"
+                                             onmouseover="v_init = setTimeout('viewHelp(1470)', 500)"
+                                             onmouseout="hideHelpInit(1470)">
+                                        <div class="field_tooltip" id="ef_tooltip1470"
+                                             onmouseover="viewHelp(1470)"
+                                             onmouseout="hideHelpInit(1470)"></div>
+                                    </td>                                                        <td><b>:</b></td>
+                                </tr>
+                            </table>
+                            <input type=hidden id="main1470" value=0>
+                            <input type='hidden' id="type_value1470"
+                                   value='3'>
+                            <input type=hidden
+                                   name="edit[2][1470]"
+                                   id="edit1470" value=1>                                            </td>
+                        <td style="padding: 2px 4px;">
+
+                            <table cellpadding="0" cellspacing="0" border="0" style="width: 85%;">
+                                <tr>
+                                    <td>                                                        </td>
+
+                                    <td id="field_edit1470_td1"
+                                        style="">
+
+                                        <input type="text"
+                                               name="value[2][1470]"                                                                           id="value1470"
+                                               value=""
+                                               class="form-control single_input"
+                                        >
+                                    </td>
+
+                                    <td>                                                        </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <tr id="fgroup_edit_header11" data-fgrpid="11" style="padding: ">
+                        <td colspan=2 class="edit-title"
+                            style="background-color: #eee; border-top: 1px #ccc solid; padding-top: 1px; padding-left: 7px; cursor:default; border-radius: 7px"
+                            onclick="show_fgroup('11')">
+                            <img src="images/block.gif"
+                                 id="fg_img_edit11"
+                                 style="vertical-align: baseline;">
+                            <b>Реквизиты</b>
+                        </td>
+                    </tr>
+                    <script>
+                        $(function () {
+                            if (!document.getElementById("fgroup_edit11").innerHTML.replace(/^\s+/g, '')) document.getElementById("fgroup_edit_header11").style.display = 'none';
+                        });
+                    </script>
+                    <tbody id="fgroup_edit11"
+                    >
+                    <tr id="field_edit439">
+                        <td style=" width:40%; padding: 2px 4px; vertical-align: baseline;">
+                            <table align=right>
+                                <tr>
+                                    <td align=right style="line-height: 13px;"
+                                        class="table_title_head"
+                                        title="Автоматически заполняемое поле"  >                                                            <b style="vertical-align: middle;">Юридическое название </b>
+                                    </td>
+                                    <td><img src="images/help.gif"
+                                             onclick="viewHelp(439)"
+                                             onmouseover="v_init = setTimeout('viewHelp(439)', 500)"
+                                             onmouseout="hideHelpInit(439)">
+                                        <div class="field_tooltip" id="ef_tooltip439"
+                                             onmouseover="viewHelp(439)"
+                                             onmouseout="hideHelpInit(439)"></div>
+                                    </td>                                                        <td><b>:</b></td>
+                                </tr>
+                            </table>
+                            <input type=hidden id="main439" value=0>
+                            <input type='hidden' id="type_value439"
+                                   value='3'>
+                            <input type=hidden
+                                   name="edit[2][439]"
+                                   id="edit439" value=1>                                            </td>
+                        <td style="padding: 2px 4px;">
+
+                            <table cellpadding="0" cellspacing="0" border="0" style="width: 85%;">
+                                <tr>
+                                    <td>                                                        </td>
+
+                                    <td id="field_edit439_td1"
+                                        style="">
+
+                                        <input type="text"
+                                               name="value[2][439]"                                                                           id="value439"
+                                               value="sdfgds"
+                                               class="form-control single_input"
+                                        >
+                                    </td>
+
+                                    <td>                                                        </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr id="field_edit440">
+                        <td style=" width:40%; padding: 2px 4px; vertical-align: baseline;">
+                            <table align=right>
+                                <tr>
+                                    <td align=right style="line-height: 13px;"
+                                    >                                                            <b style="vertical-align: middle;">Юридический адрес </b>
+                                    </td>
+                                    <td><b>:</b></td>
+                                </tr>
+                            </table>
+                            <input type=hidden id="main440" value=0>
+                            <input type='hidden' id="type_value440"
+                                   value='3'>
+                            <input type=hidden
+                                   name="edit[2][440]"
+                                   id="edit440" value=1>                                            </td>
+                        <td style="padding: 2px 4px;">
+
+                            <table cellpadding="0" cellspacing="0" border="0" style="width: 85%;">
+                                <tr>
+                                    <td>                                                        </td>
+
+                                    <td id="field_edit440_td1"
+                                        style="">
+
+                                        <input type="text"
+                                               name="value[2][440]"                                                                           id="value440"
+                                               value="dfg"
+                                               class="form-control single_input"
+                                        >
+                                    </td>
+
+                                    <td>                                                        </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr id="field_edit3340">
+                        <td style=" width:40%; padding: 2px 4px; vertical-align: baseline;">
+                            <table align=right>
+                                <tr>
+                                    <td align=right style="line-height: 13px;"
+                                    >                                                            <b style="vertical-align: middle;">ОГРН </b>
+                                    </td>
+                                    <td><b>:</b></td>
+                                </tr>
+                            </table>
+                            <input type=hidden id="main3340" value=0>
+                            <input type='hidden' id="type_value3340"
+                                   value='3'>
+                            <input type=hidden
+                                   name="edit[2][3340]"
+                                   id="edit3340" value=1>                                            </td>
+                        <td style="padding: 2px 4px;">
+
+                            <table cellpadding="0" cellspacing="0" border="0" style="width: 85%;">
+                                <tr>
+                                    <td>                                                        </td>
+
+                                    <td id="field_edit3340_td1"
+                                        style="">
+
+                                        <input type="text"
+                                               name="value[2][3340]"                                                                           id="value3340"
+                                               value=""
+                                               class="form-control single_input"
+                                        >
+                                    </td>
+
+                                    <td>                                                        </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr id="field_edit1056">
+                        <td style=" width:40%; padding: 2px 4px; vertical-align: baseline;">
+                            <table align=right>
+                                <tr>
+                                    <td align=right style="line-height: 13px;"
+                                    >                                                            <b style="vertical-align: middle;">ИНН </b>
+                                    </td>
+                                    <td><b>:</b></td>
+                                </tr>
+                            </table>
+                            <input type=hidden id="main1056" value=0>
+                            <input type='hidden' id="type_value1056"
+                                   value='3'>
+                            <input type=hidden
+                                   name="edit[2][1056]"
+                                   id="edit1056" value=1>                                            </td>
+                        <td style="padding: 2px 4px;">
+
+                            <table cellpadding="0" cellspacing="0" border="0" style="width: 85%;">
+                                <tr>
+                                    <td>                                                        </td>
+
+                                    <td id="field_edit1056_td1"
+                                        style="">
+
+                                        <input type="text"
+                                               name="value[2][1056]"                                                                           id="value1056"
+                                               value=""
+                                               class="form-control single_input"
+                                        >
+                                    </td>
+
+                                    <td>                                                        </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr id="field_edit1057">
+                        <td style=" width:40%; padding: 2px 4px; vertical-align: baseline;">
+                            <table align=right>
+                                <tr>
+                                    <td align=right style="line-height: 13px;"
+                                    >                                                            <b style="vertical-align: middle;">КПП </b>
+                                    </td>
+                                    <td><b>:</b></td>
+                                </tr>
+                            </table>
+                            <input type=hidden id="main1057" value=0>
+                            <input type='hidden' id="type_value1057"
+                                   value='3'>
+                            <input type=hidden
+                                   name="edit[2][1057]"
+                                   id="edit1057" value=1>                                            </td>
+                        <td style="padding: 2px 4px;">
+
+                            <table cellpadding="0" cellspacing="0" border="0" style="width: 85%;">
+                                <tr>
+                                    <td>                                                        </td>
+
+                                    <td id="field_edit1057_td1"
+                                        style="">
+
+                                        <input type="text"
+                                               name="value[2][1057]"                                                                           id="value1057"
+                                               value=""
+                                               class="form-control single_input"
+                                        >
+                                    </td>
+
+                                    <td>                                                        </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr id="field_edit1065">
+                        <td style=" width:40%; padding: 2px 4px; vertical-align: baseline;">
+                            <table align=right>
+                                <tr>
+                                    <td align=right style="line-height: 13px;"
+                                    >                                                            <b style="vertical-align: middle;">Банк </b>
+                                    </td>
+                                    <td><b>:</b></td>
+                                </tr>
+                            </table>
+                            <input type=hidden id="main1065" value=0>
+                            <input type='hidden' id="type_value1065"
+                                   value='3'>
+                            <input type=hidden
+                                   name="edit[2][1065]"
+                                   id="edit1065" value=1>                                            </td>
+                        <td style="padding: 2px 4px;">
+
+                            <table cellpadding="0" cellspacing="0" border="0" style="width: 85%;">
+                                <tr>
+                                    <td>                                                        </td>
+
+                                    <td id="field_edit1065_td1"
+                                        style="">
+
+                                        <input type="text"
+                                               name="value[2][1065]"                                                                           id="value1065"
+                                               value=""
+                                               class="form-control single_input"
+                                        >
+                                    </td>
+
+                                    <td>                                                        </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr id="field_edit1061">
+                        <td style=" width:40%; padding: 2px 4px; vertical-align: baseline;">
+                            <table align=right>
+                                <tr>
+                                    <td align=right style="line-height: 13px;"
+                                    >                                                            <b style="vertical-align: middle;">БИК </b>
+                                    </td>
+                                    <td><b>:</b></td>
+                                </tr>
+                            </table>
+                            <input type=hidden id="main1061" value=0>
+                            <input type='hidden' id="type_value1061"
+                                   value='3'>
+                            <input type=hidden
+                                   name="edit[2][1061]"
+                                   id="edit1061" value=1>                                            </td>
+                        <td style="padding: 2px 4px;">
+
+                            <table cellpadding="0" cellspacing="0" border="0" style="width: 85%;">
+                                <tr>
+                                    <td>                                                        </td>
+
+                                    <td id="field_edit1061_td1"
+                                        style="">
+
+                                        <input type="text"
+                                               name="value[2][1061]"                                                                           id="value1061"
+                                               value=""
+                                               class="form-control single_input"
+                                        >
+                                    </td>
+
+                                    <td>                                                        </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr id="field_edit1058">
+                        <td style=" width:40%; padding: 2px 4px; vertical-align: baseline;">
+                            <table align=right>
+                                <tr>
+                                    <td align=right style="line-height: 13px;"
+                                    >                                                            <b style="vertical-align: middle;">Расчетный счет </b>
+                                    </td>
+                                    <td><b>:</b></td>
+                                </tr>
+                            </table>
+                            <input type=hidden id="main1058" value=0>
+                            <input type='hidden' id="type_value1058"
+                                   value='3'>
+                            <input type=hidden
+                                   name="edit[2][1058]"
+                                   id="edit1058" value=1>                                            </td>
+                        <td style="padding: 2px 4px;">
+
+                            <table cellpadding="0" cellspacing="0" border="0" style="width: 85%;">
+                                <tr>
+                                    <td>                                                        </td>
+
+                                    <td id="field_edit1058_td1"
+                                        style="">
+
+                                        <input type="text"
+                                               name="value[2][1058]"                                                                           id="value1058"
+                                               value=""
+                                               class="form-control single_input"
+                                        >
+                                    </td>
+
+                                    <td>                                                        </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr id="field_edit1059">
+                        <td style=" width:40%; padding: 2px 4px; vertical-align: baseline;">
+                            <table align=right>
+                                <tr>
+                                    <td align=right style="line-height: 13px;"
+                                    >                                                            <b style="vertical-align: middle;">Корр. счет </b>
+                                    </td>
+                                    <td><b>:</b></td>
+                                </tr>
+                            </table>
+                            <input type=hidden id="main1059" value=0>
+                            <input type='hidden' id="type_value1059"
+                                   value='3'>
+                            <input type=hidden
+                                   name="edit[2][1059]"
+                                   id="edit1059" value=1>                                            </td>
+                        <td style="padding: 2px 4px;">
+
+                            <table cellpadding="0" cellspacing="0" border="0" style="width: 85%;">
+                                <tr>
+                                    <td>                                                        </td>
+
+                                    <td id="field_edit1059_td1"
+                                        style="">
+
+                                        <input type="text"
+                                               name="value[2][1059]"                                                                           id="value1059"
+                                               value=""
+                                               class="form-control single_input"
+                                        >
+                                    </td>
+
+                                    <td>                                                        </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr id="field_edit1060">
+                        <td style=" width:40%; padding: 2px 4px; vertical-align: baseline;">
+                            <table align=right>
+                                <tr>
+                                    <td align=right style="line-height: 13px;"
+                                    >                                                            <b style="vertical-align: middle;">Лицевой счет </b>
+                                    </td>
+                                    <td><b>:</b></td>
+                                </tr>
+                            </table>
+                            <input type=hidden id="main1060" value=0>
+                            <input type='hidden' id="type_value1060"
+                                   value='3'>
+                            <input type=hidden
+                                   name="edit[2][1060]"
+                                   id="edit1060" value=1>                                            </td>
+                        <td style="padding: 2px 4px;">
+
+                            <table cellpadding="0" cellspacing="0" border="0" style="width: 85%;">
+                                <tr>
+                                    <td>                                                        </td>
+
+                                    <td id="field_edit1060_td1"
+                                        style="">
+
+                                        <input type="text"
+                                               name="value[2][1060]"                                                                           id="value1060"
+                                               value=""
+                                               class="form-control single_input"
+                                        >
+                                    </td>
+
+                                    <td>                                                        </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr id="field_edit1062">
+                        <td style=" width:40%; padding: 2px 4px; vertical-align: baseline;">
+                            <table align=right>
+                                <tr>
+                                    <td align=right style="line-height: 13px;"
+                                    >                                                            <b style="vertical-align: middle;">Руководитель </b>
+                                    </td>
+                                    <td><b>:</b></td>
+                                </tr>
+                            </table>
+                            <input type=hidden id="main1062" value=0>
+                            <input type='hidden' id="type_value1062"
+                                   value='3'>
+                            <input type=hidden
+                                   name="edit[2][1062]"
+                                   id="edit1062" value=1>                                            </td>
+                        <td style="padding: 2px 4px;">
+
+                            <table cellpadding="0" cellspacing="0" border="0" style="width: 85%;">
+                                <tr>
+                                    <td>                                                        </td>
+
+                                    <td id="field_edit1062_td1"
+                                        style="">
+
+                                        <input type="text"
+                                               name="value[2][1062]"                                                                           id="value1062"
+                                               value=""
+                                               class="form-control single_input"
+                                        >
+                                    </td>
+
+                                    <td>                                                        </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr id="field_edit1063">
+                        <td style=" width:40%; padding: 2px 4px; vertical-align: baseline;">
+                            <table align=right>
+                                <tr>
+                                    <td align=right style="line-height: 13px;"
+                                    >                                                            <b style="vertical-align: middle;">Бухгалтер </b>
+                                    </td>
+                                    <td><b>:</b></td>
+                                </tr>
+                            </table>
+                            <input type=hidden id="main1063" value=0>
+                            <input type='hidden' id="type_value1063"
+                                   value='3'>
+                            <input type=hidden
+                                   name="edit[2][1063]"
+                                   id="edit1063" value=1>                                            </td>
+                        <td style="padding: 2px 4px;">
+
+                            <table cellpadding="0" cellspacing="0" border="0" style="width: 85%;">
+                                <tr>
+                                    <td>                                                        </td>
+
+                                    <td id="field_edit1063_td1"
+                                        style="">
+
+                                        <input type="text"
+                                               name="value[2][1063]"                                                                           id="value1063"
+                                               value=""
+                                               class="form-control single_input"
+                                        >
+                                    </td>
+
+                                    <td>                                                        </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr id="field_edit1064">
+                        <td style=" width:40%; padding: 2px 4px; vertical-align: baseline;">
+                            <table align=right>
+                                <tr>
+                                    <td align=right style="line-height: 13px;"
+                                    >                                                            <b style="vertical-align: middle;">Код ОКАТО </b>
+                                    </td>
+                                    <td><b>:</b></td>
+                                </tr>
+                            </table>
+                            <input type=hidden id="main1064" value=0>
+                            <input type='hidden' id="type_value1064"
+                                   value='3'>
+                            <input type=hidden
+                                   name="edit[2][1064]"
+                                   id="edit1064" value=1>                                            </td>
+                        <td style="padding: 2px 4px;">
+
+                            <table cellpadding="0" cellspacing="0" border="0" style="width: 85%;">
+                                <tr>
+                                    <td>                                                        </td>
+
+                                    <td id="field_edit1064_td1"
+                                        style="">
+
+                                        <input type="text"
+                                               name="value[2][1064]"                                                                           id="value1064"
+                                               value=""
+                                               class="form-control single_input"
+                                        >
+                                    </td>
+
+                                    <td>                                                        </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr id="field_edit3810">
+                        <td style=" width:40%; padding: 2px 4px; vertical-align: baseline;">
+                            <table align=right>
+                                <tr>
+                                    <td align=right style="line-height: 13px;"
+                                    >                                                            <b style="vertical-align: middle;">ОКПО </b>
+                                    </td>
+                                    <td><b>:</b></td>
+                                </tr>
+                            </table>
+                            <input type=hidden id="main3810" value=0>
+                            <input type='hidden' id="type_value3810"
+                                   value='3'>
+                            <input type=hidden
+                                   name="edit[2][3810]"
+                                   id="edit3810" value=1>                                            </td>
+                        <td style="padding: 2px 4px;">
+
+                            <table cellpadding="0" cellspacing="0" border="0" style="width: 85%;">
+                                <tr>
+                                    <td>                                                        </td>
+
+                                    <td id="field_edit3810_td1"
+                                        style="">
+
+                                        <input type="text"
+                                               name="value[2][3810]"                                                                           id="value3810"
+                                               value=""
+                                               class="form-control single_input"
+                                        >
+                                    </td>
+
+                                    <td>                                                        </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr id="field_edit1088" class="add_link-wrapper">
+                        <td style=" width:40%; padding: 2px 4px; vertical-align: baseline;">
+                            <table align=right>
+                                <tr>
+                                    <td align=right style="line-height: 13px;"
+                                    >                                                            <b style="vertical-align: middle;">Наша компания </b>
+                                    </td>
+                                    <td><b>:</b></td>
+                                </tr>
+                            </table>
+                            <input type=hidden id="main1088" value=0>
+                            <input type='hidden' id="type_value1088"
+                                   value='5'>
+                            <input type=hidden
+                                   name="edit[2][1088]"
+                                   id="edit1088" value=1>                                            </td>
+                        <td style="padding: 2px 4px;"  >
+
+                            <table cellpadding="0" cellspacing="0" border="0" style="width: 85%;">
+                                <tr>
+                                    <td>                                                        </td>
+
+                                    <td id="field_edit1088_td1"
+                                        style="white-space: nowrap;">
+
+                                        <input class="form-control" type="text" id="edit_value1088"
+                                               value=""
+                                               first_value=""
+                                               class="input_edit_line"
+                                        ><span
+                                            class="drop_down_icon glyphicon glyphicon-triangle-bottom"
+                                            onclick="this.blur();this.previousSibling.focus();$(this.previousSibling).show_search();return false;"
+                                            onmousedown="$(this.previousSibling).prevent_blur();return false;"
+                                            onmouseup="$(this.previousSibling).enable_blur();"
+                                            ondragstart="event.returnValue=!1;"
+                                    ></span>
+                                        <input
+                                                type="hidden"
+                                                name="value[2][1088]"
+                                                id="value1088"
+                                                value="1"
+                                                onChange="">
+                                        <img src="images/green_plus.png"
+                                             title="Добавить организацию"
+                                             class="add_link_img2"
+                                             onclick="add_link_block_show(1088)"
+                                             onmouseover="this.src='images/green_plus_active.png'"
+                                             onmouseout="this.src='images/green_plus.png'">
+                                    </td>
+
+                                    <td>                                                        </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr id='add_link_block1088' class='add_link_block1088'
+                        style='display:none;'>
+                        <td colspan=2 class="add_link_block_top"></td>
+                    </tr>
+
+                    <tr class='add_link_block1088' style='display:none;'>
+                        <td align="right"
+                        >
+                            <b>Краткое название компании</b>
+                            <b>:</b>
+                        </td>
+                        <td style="vertical-align: middle;"
+                            id="sub_cell_1420_1088_0"
+                        ><input
+                                part=add_link_field
+                                value=""
+                                id="fast_edit_span_1420_1088_0" field_id="1420" line_id="1088"
+                                mult_value="0" placeholder="" subtable_id="0"
+                                class="fast_edit_span_1420_1088 fast_edit_bordered  superpuper"/></div><script>addHandler_text(document.getElementById('fast_edit_span_1420_1088_0'));
+        </script>
+            </td>
+            </tr>
+            <tr class='add_link_block1088' style='display:none;'>
+                <td align="right"
+                >
+                    <b>Юридическое название компании</b>
+                    <span class="tooltip_help_wrapper">
+              <img src="images/help.gif" onclick="viewHelp(531)"
+                   onmouseover="v_init = setTimeout('viewHelp(531)', 500)"
+                   onmouseout="hideHelpInit(531)">
+              <span class="field_tooltip" id="ef_tooltip531" onmouseover="viewHelp(531)"
+                    onmouseout="hideHelpInit(531)"></span>
+            </span>
+                    <b>:</b>
+                </td>
+                <td style="vertical-align: middle;"
+                    id="sub_cell_531_1088_0"
+                ><input
+                        part=add_link_field
+                        value=""
+                        id="fast_edit_span_531_1088_0" field_id="531" line_id="1088"
+                        mult_value="0" placeholder="" subtable_id="0"
+                        class="fast_edit_span_531_1088 fast_edit_bordered  superpuper"/></div><script>addHandler_text(document.getElementById('fast_edit_span_531_1088_0'));
+    </script>
+        </td>
+        </tr>
+        <tr class='add_link_block1088' style='display:none;'>
+            <td class="add_link_block_bottom"></td>
+            <td class="add_link_block_bottom"><span
+                    onclick="add_link_block_save(1088,'1420,531,')"
+                    class="add_link_block_save"><span class="b_small_begin"></span><span
+                    class="b_small">Сохранить</span><span class="b_small_end"></span></span>
+            </td>
+        </tr>
+        </table>
+        <br><br>
+
+    </div>
+
+
+
+    <div class="buttons-panel-wrapper">
+                            <div id="view-buttons">
+                                <div id="aside1">
+                                <div>
+                                    <a href="#" class="button edit_lines edit" id="edit"><!--onclick="if (this.className.indexOf('disbled_edit')==-1) switch_mode('edit'); return false; "-->
+                                        <span>
+                                        <i class="fa fa-undo" aria-hidden="true"></i>
+                                            Редактировать</span>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#" class="button arrow-left">
+                                        <span>
+                                        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                                            Вернуться в таблицу</span>
+                                    </a>
+                                </div>
+                                </div>
+                                <div>
+                                    <a href="#" class="button check print_line">
+                                        <span>
+                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                            Распечатать </span>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#" class="button check mail_line">
+                                        <span>
+                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                            Разослать </span>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#" onclick="buttonListView(); return false" class="button additional_none" id="sec_buttons_toogle">
+                                        <span>
+                                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                            Дополнительно </span>
+                                    </a>
+                                </div>
+                                <div id="secondary_buttons" style="display: none;">
+                                    <div style="padding-bottom:5px; width:222px;">
+                                        <a class="button check sms_line" onclick=" open_dialog('sms') ">
+                                            <i class="fa fa-check" aria-hidden="true"></i>
+                                            <span>Разослать СМС</span></a>
+                                    </div>
+                                    <div style="padding-bottom:5px; width:222px;">
+                                        <a href="view_line2.php?table=42&amp;filter=48&amp;line=2&amp;op=copy" class="button check">
+                                            <i class="fa fa-check" aria-hidden="true"></i>
+                                            <span>Копировать</span></a>
+                                    </div>
+                                    <div style="padding-bottom:5px; width:222px;">
+                                        <a href="view_line2.php?table=42&amp;filter=48&amp;line=2&amp;op=archive" class="button check archive_line">
+                                            <i class="fa fa-check" aria-hidden="true"></i>
+                                            <span>Архивировать</span></a>
+                                    </div>
+                                    <div style="padding-bottom:5px; width:222px;">
+                                        <a href="view_line2.php?table=42&amp;filter=48&amp;line=2&amp;op=delete" class="button check delete_line">
+                                            <i class="fa fa-check" aria-hidden="true"></i>
+                                            <span>Удалить</span></a>
+                                    </div>
+                                </div>
+                                <div id="user_button_div_3">
+                                    <a href="#" class="button additional_none bill" >
+                                        <span> Выписать счет </span>
+                                    </a>
+                                </div>
+                                <div id="user_button_div_510">
+                                    <a href="#" class="button addit_act_warning" >
+                                        <span> Написать письмо </span>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#" class="button add" >
+                                        <span>
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            Добавить контрагента
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="edit_buttons">
+                                <div id="aside2">
+                                <div style="padding-bottom:5px; width:222px; " class="save-btn-div">
+                                    <a href=""
+                                       onclick="  save_line();  return false;"
+                                       class="save">
+                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                        <span>Сохранить</span>
+                                    </a>
+                                </div>
+                                <div style="padding-bottom:5px; width:222px;">
+                                    <a href
+                                       class="button arrow-left" id="return">
+                                        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                                        <span>Вернуться в просмотр</span>
+                                    </a>
+                                </div>
+                                </div>
+                                <br>
+                                <div style="padding-bottom:5px; width:222px;" id="e_user_button_div_3">
+                                    <a href="#" onclick="return user_button3()"
+                                       class="button addit_act_default bill"
+                                       title=""><span>Выписать счет</span></a>
+                                </div>
+                                <div style="padding-bottom:5px; width:222px;" id="e_user_button_div_510">
+                                    <a href="#" onclick="return user_button510()"
+                                       class="button addit_act_warning"
+                                       title=""><span>Написать письмо</span></a>
+                                </div>
+                            </div>
+
+                            <div class="sidebar" id="sidebar-hide">
+                                <div class="sidebar_header rel_block" id="fgroup_view99" onclick="relView()">
+                                    <img id="fg_img_view1"
+                                         src="images/block.gif">
+                                    <span>Связанные таблицы</span>
+                                </div>
+                                <ul id="rel_tables_list" style="display: block">
+                                    <li>
+                                        <a href="fields.php?table=271&rel_search&rel_table=42&rel_line=2&rel_field=4629"><span>Лог рассылок </span></a>
+                                    </li>
+                                    <li>
+                                        <ul id="rel_tables_sublist"
+                                            style="padding: 0px;display: none">
+                                            <li>
+                                                <a href="fields.php?table=48&rel_search&rel_table=42&rel_line=2&rel_field=508"><span>Расходы </span></a>
+                                            </li>
+                                            <li>
+                                                <a href="fields.php?table=51&rel_search&rel_table=42&rel_line=2&rel_field=545"><span>Сотрудники </span></a>
+                                            </li>
+                                            <li>
+                                                <a href="fields.php?table=52&rel_search&rel_table=42&rel_line=2&rel_field=570"><span>Платежное поручение </span></a>
+                                            </li>
+                                            <li>
+                                                <a href="fields.php?table=53&rel_search&rel_table=42&rel_line=2&rel_field=589"><span>Накладная (Получатель)</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="fields.php?table=53&rel_search&rel_table=42&rel_line=2&rel_field=592"><span>Накладная (Через кого)</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="fields.php?table=56&rel_search&rel_table=42&rel_line=2&rel_field=615"><span>Доверенность </span></a>
+                                            </li>
+                                            <li>
+                                                <a href="fields.php?table=57&rel_search&rel_table=42&rel_line=2&rel_field=628"><span>ПКО </span></a>
+                                            </li>
+                                            <li>
+                                                <a href="fields.php?table=62&rel_search&rel_table=42&rel_line=2&rel_field=723"><span>Работа с клиентами </span></a>
+                                            </li>
+                                            <li>
+                                                <a href="fields.php?table=43&rel_search&rel_table=42&rel_line=2&rel_field=839"><span>Счета </span></a>
+                                            </li>
+                                            <li>
+                                                <a href="fields.php?table=78&rel_search&rel_table=42&rel_line=2&rel_field=849"><span>Договор </span></a>
+                                            </li>
+                                            <li>
+                                                <a href="fields.php?table=79&rel_search&rel_table=42&rel_line=2&rel_field=855"><span>Счет-фактура </span></a>
+                                            </li>
+                                            <li>
+                                                <a href="fields.php?table=81&rel_search&rel_table=42&rel_line=2&rel_field=871"><span>Акт </span></a>
+                                            </li>
+                                            <li>
+                                                <a href="fields.php?table=47&rel_search&rel_table=42&rel_line=2&rel_field=1067"><span>Задания </span></a>
+                                            </li>
+                                            <li>
+                                                <a href="fields.php?table=87&rel_search&rel_table=42&rel_line=2&rel_field=1118"><span>Приход на склад </span></a>
+                                            </li>
+                                            <li>
+                                                <a href="fields.php?table=88&rel_search&rel_table=42&rel_line=2&rel_field=1129"><span>Расход со склада </span></a>
+                                            </li>
+                                            <li>
+                                                <a href="fields.php?table=130&rel_search&rel_table=42&rel_line=2&rel_field=1750"><span>Заявки </span></a>
+                                            </li>
+                                            <li>
+                                                <a href="fields.php?table=930&rel_search&rel_table=42&rel_line=2&rel_field=13610"><span>Задания (УП) </span></a>
+                                            </li>
+                                            <li>
+                                                <a href="fields.php?table=960&rel_search&rel_table=42&rel_line=2&rel_field=14100"><span>Проекты 2 </span></a>
+                                            </li>
+                                            <li>
+                                                <a href="fields.php?table=1100&rel_search&rel_table=42&rel_line=2&rel_field=15900"><span>Шаблоны заданий 2 </span></a>
+                                            </li>
+                                            <li>
+                                                <a href="fields.php?table=1120&rel_search&rel_table=42&rel_line=2&rel_field=16540"><span>Почта </span></a>
+                                            </li>
+                                        </ul>
+                                        <div id="rel_tables_show" style="cursor: pointer; text-align: center"
+                                             onclick="relsubView()">Показать ещё</div>                                </li>
+                                </ul>
+                            </div>
+                            <div class="log_view">
+                                <img src="images/log_view.gif">
+                                <a
+                                        id="logi"
+                                        href="edit_log.php?table=42&line=2&back_url=NzE1NTIxZGI5ZjNkMjI4YzRiOGYwZDAxOTA2MmRmMWZ8L3ZpZXdfbGluZTIucGhwP3RhYmxlPTQyJmZpbHRlcj00OCZsaW5lPTI="><b>Лог записи</b></a>
+
+                            </div>
+                        </div>
+                        </div>
+
+                    </div>
+
+
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        (function () {
+            if (!document.getElementById("fgroup_view1").innerHTML.replace(/^\s+/g, '')) document.getElementById("fgroup_view_header1").style.display = 'none';
+        })();
+
+    </script>
+
+    <script>
+
+        (function () {
+            if (!document.getElementById("fgroup_view99").innerHTML.replace(/^\s+/g, '')) document.getElementById("fgroup_view_header1").style.display = 'none';
+        })();
+
+    </script>
+
+
+    <script>
+        document.querySelector('.sidebar').addEventListener('click', function(){
+            if (document.getElementById('rel_tables_list').style.display = 'block' ) document.getElementById('fg_img_view1').src = 'images/block.gif';
+            else if (document.getElementById('rel_tables_list').style.display = 'none')  {
+                document.getElementById('fg_img_view1').src = 'images/none.gif';
+            }
+        });
+
+        $('.sidebar').click(function(){
+            var idToSRC = 'images/'+ this.id +'.gif';
+            console.log(this.id);
+            $('#rel_tables_list').attr('src', idToSRC);
+        });
+
+
+        function show_fgroup(fgroup_id)
+        {
+            if (document.getElementById('fgroup_view'+fgroup_id).style.display == 'none')
+            {
+                if (document.getElementById('fgroup_view'+fgroup_id)) document.getElementById('fgroup_view'+fgroup_id).style.display = '';
+                if (document.getElementById('fgroup_edit'+fgroup_id)) document.getElementById('fgroup_edit'+fgroup_id).style.display = '';
+                if (document.getElementById('fgroup_view'+fgroup_id)) document.getElementById('fg_img_view'+fgroup_id).src = 'images/block.gif';
+                if (document.getElementById('fgroup_edit'+fgroup_id)) document.getElementById('fg_img_edit'+fgroup_id).src = 'images/block.gif';
+                save_fgroup_set(fgroup_id, 1);
+            }
+            else
+            {
+                if (document.getElementById('fgroup_view'+fgroup_id)) document.getElementById('fgroup_view'+fgroup_id).style.display = 'none';
+                if (document.getElementById('fgroup_edit'+fgroup_id)) document.getElementById('fgroup_edit'+fgroup_id).style.display = 'none';
+                if (document.getElementById('fgroup_view'+fgroup_id)) document.getElementById('fg_img_view'+fgroup_id).src = 'images/none.gif';
+                if (document.getElementById('fgroup_edit'+fgroup_id)) document.getElementById('fg_img_edit'+fgroup_id).src = 'images/none.gif';
+                save_fgroup_set(fgroup_id, 0);
+            }
+        }
+        var click_status;
+        function save_fgroup_set(fgroup_id, vis)
+        {
+            var req;
+            if (window.XMLHttpRequest) {
+                try {
+                    req = new XMLHttpRequest();
+                } catch (e){}
+            } else if (window.ActiveXObject) {
+                try {
+                    req = new ActiveXObject('Msxml2.XMLHTTP');
+                } catch (e){
+                    try {
+                        req = new ActiveXObject('Microsoft.XMLHTTP');
+                    } catch (e){}
+                }
+            }
+            if (req) {
+                req.open("GET", "save_fgroup_set.php?fgroup="+fgroup_id+"&vis="+vis, true);
+                req.send(null);
+            }
+        }
+
+
+    </script>
+    <script>
+        // Список связанных таблиц
+        function relView() {
+            if (document.getElementById("rel_tables_list").style.display == 'none')
+            {
+                $('rel_list_view42', 1, { expires: 30});
+                if (navigator.appVersion.indexOf("MSIE")!=-1) document.getElementById("rel_tables_list").style.display = 'block'; // В IE без анимации.
+            }
+            else
+            {
+                $('rel_list_view42', null);
+                if (navigator.appVersion.indexOf("MSIE")!=-1) document.getElementById("rel_tables_list").style.display = 'none'; // В IE без анимации.
+            }
+
+            if (navigator.appVersion.indexOf("MSIE")==-1) $("#rel_tables_list").slideToggle(); // Для нормальных браузеров.
+
+            $(".sidebar_header").toggleClass("rel_block rel_none");
+        }
+
+        // Список всех связанных таблиц
+        function relsubView() {
+            if (document.getElementById("rel_tables_sublist").style.display == 'none')
+            {
+                if (navigator.appVersion.indexOf("MSIE")!=-1) document.getElementById("rel_tables_sublist").style.display = 'block'; // В IE без анимации.
+                document.getElementById("rel_tables_show").innerHTML = lang.Hide;
+            }
+            else
+            {
+                if (navigator.appVersion.indexOf("MSIE")!=-1) document.getElementById("rel_tables_sublist").style.display = 'none'; // В IE без анимации.
+                document.getElementById("rel_tables_show").innerHTML = lang.Show_more;
+            }
+
+            if (navigator.appVersion.indexOf("MSIE")==-1) $('#rel_tables_sublist').slideToggle();
+        }
+
+
+
+    </script>
+    <script>
+
+        var elementPosition = $('#aside1').offset();
+
+        $(window).scroll(function(){
+            if($(window).scrollTop() > elementPosition.top){
+                $('#aside1').css('position','fixed').css('top','0').css('padding-top','10px');
+                $('#aside1').css('background-color','#fff').css('z-index','101');
+            } else {
+                $('#aside1').css('position','static');
+            }
+        });
+
+        var elementPosition2 = $('#aside2').offset();
+
+        $(window).scroll(function(){
+            if($(window).scrollTop() > elementPosition2.top){
+                $('#aside2').css('position','fixed').css('top','0').css('padding-top','10px');
+                $('#aside2').css('background-color','#fff').css('z-index','101');
+            } else {
+                $('#aside2').css('position','static');
+            }
+        });
+
+    </script>
+    <script>
+        var editBtn = document.getElementById('edit');
+        editBtn.addEventListener('click', function() {
+            if (document.getElementById('view-buttons').style.display = 'inline-block') {
+                document.getElementById('view-buttons').style.display = 'none';
+                document.getElementById('edit_buttons').style.display = 'inline-block';
+                document.getElementById('view_block').style.display = 'none';
+                document.getElementById('edit_block').style.display = 'inline-block';
+            }
+        }, false);
+        var returnBtn = document.getElementById('return');
+        returnBtn.addEventListener('click', function() {
+                document.getElementById('view-buttons').style.display = 'inline-block';
+                document.getElementById('edit_buttons').style.display = 'none';
+                document.getElementById('view_block').style.display = 'inline-block';
+                document.getElementById('edit_block').style.display = 'none';
+        }, false);
+
+
+    </script>
+    <script>
+        // Список кнопок
+        function buttonListView() {
+            if (document.getElementById("secondary_buttons").style.display == 'none')
+            {
+                $('view_buttons42', 1, { expires: 30});
+                if (navigator.appVersion.indexOf("MSIE")!=-1) document.getElementById("secondary_buttons").style.display = 'block'; // В IE без анимации.
+            }
+            else
+            {
+                $('view_buttons42', null);
+                if (navigator.appVersion.indexOf("MSIE")!=-1) document.getElementById("secondary_buttons").style.display = 'none'; // В IE без анимации.
+            }
+
+            if (navigator.appVersion.indexOf("MSIE")==-1) $("#secondary_buttons").slideToggle(); // Для нормальных браузеров.
+
+            $("#sec_buttons_toogle").toggleClass("additional_block additional_none");
+        }
+
+
+    </script>
+</body>
+</html>
