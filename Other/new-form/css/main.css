@@ -456,5 +456,25 @@ input[type=text]:focus, input[type=password]:focus, textarea:focus, select:focus
     background: #fff8d5;
 }
 
+.drop_down_icon:after {
+    content: '';
+    position: absolute;
+    top: 14px;
+    right: 7px;
+    border: 3px solid transparent;
+    border-top: 6px solid #000;
+}
 
+.glyphicon.glyphicon-triangle-bottom {
+    top: -31px;
+    right: -142px;
+}
+
+.drop_down_icon {
+    background: none !important;
+    height: 19px;
+    position: relative;
+    top: -1px;
+    right: 0;
+}
 

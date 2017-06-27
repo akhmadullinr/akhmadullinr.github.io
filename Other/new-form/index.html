@@ -1022,6 +1022,7 @@
                                                            value=""
                                                            first_value=""
                                                            class="input_edit_line"
+                                                           list=""
                                                     ><span
                                                         class="drop_down_icon glyphicon glyphicon-triangle-bottom"
                                                         onclick="this.blur();this.previousSibling.focus();$(this.previousSibling).show_search();return false;"
@@ -2192,7 +2193,7 @@
                                 </div>
                             </div>
 
-                            <div class="sidebar">
+                            <div class="sidebar" id="sidebar-hide">
                                 <div class="sidebar_header rel_block" id="fgroup_view99" onclick="relView()">
                                     <img id="fg_img_view1"
                                          src="images/block.gif">
@@ -2308,6 +2309,20 @@
 
 
     <script>
+        document.querySelector('.sidebar').addEventListener('click', function(){
+            if (document.getElementById('rel_tables_list').style.display = 'block' ) document.getElementById('fg_img_view1').src = 'images/block.gif';
+            else if (document.getElementById('rel_tables_list').style.display = 'none')  {
+                document.getElementById('fg_img_view1').src = 'images/none.gif';
+            }
+        });
+
+        $('.sidebar').click(function(){
+            var idToSRC = 'images/'+ this.id +'.gif';
+            console.log(this.id);
+            $('#rel_tables_list').attr('src', idToSRC);
+        });
+
+
         function show_fgroup(fgroup_id)
         {
             if (document.getElementById('fgroup_view'+fgroup_id).style.display == 'none')
