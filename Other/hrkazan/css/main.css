@@ -289,6 +289,7 @@ hr {
     border-top: 1px solid #ededed;
     margin: 0;
     padding: 30px 0 35px 0;
+    max-height: 268px;
 }
 
 .main__information form > label,
@@ -438,6 +439,11 @@ label.login > i{
 
 .login input#login {
     width: 60%;
+}
+
+.main {
+    outline: 1px solid red;
+    min-height: 500px;
 }
 
 .main__additional form > label select,
