@@ -1,3 +1,0 @@
---no-cache --update $FileName$:$FileNameWithoutExtension$.css
-$FileNameWithoutExtension$.css:$FileNameWithoutExtension$.css.map
-C:\Ruby23-x64\bin\sass.bat
