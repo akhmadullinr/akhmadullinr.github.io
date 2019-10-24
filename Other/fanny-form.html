@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class='container'>
+<div class='main_form'>
+        <form name="my" method="" action="">
+                <div>
+                    <div class="input-title">Ваше имя:</div>
+                    <input name="name" id="name" type="text" size="40" name="nick">
+                </div>
+                <div class="input-title">Укажите желаемый год:<Br>
+                 <input name="year" id="year" type="text">
+                 </div>
+                <p><input onclick="myFunction()" type="submit" value="Узнать" class="fancy-button b">
+               </form>
+</div>
+
+</div>
+
+<script>
+
+let form = document.forms.my;
+let name = form.elements.name;
+let year = form.elements.year;
+
+
+
+
+function myFunction(){
+    console.log(year.value);
+    let whore = year.value - 18;
+    return alert("Дорогой " + name.value + "! Самая молодая шлюпка в " + year.value + " году будет " + whore + " года рождения!");
+};
+
+
+
+</script>
+
+
+</body>
+
+
+
+</html>
